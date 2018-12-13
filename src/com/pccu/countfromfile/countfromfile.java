@@ -5,7 +5,6 @@ package com.pccu.countfromfile;
 public class countfromfile {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner scanner = null;
 		int mSum = 0;
 		int mAmount = 0;
@@ -13,9 +12,7 @@ public class countfromfile {
 		try {
 		scanner = new Scanner(new File("src/consume.txt"));
 		while (scanner.hasNext()) {
-		// handle customer name
 		mCustomer = scanner.next();
-		// handle amount
 		mAmount = scanner.nextInt();
 		mSum += mAmount;
 		System.out.println("Name: " + mCustomer +" " + "Amount: " +mAmount);
